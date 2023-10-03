@@ -10,8 +10,9 @@ class cve {
        const index = Math.floor(Math.random() * (max - 0)) + 0;
        const smax = Object.keys(testData.severity).length
        const severityIndex = Math.floor(Math.random() * (smax - 0)) + 0;
+       let today = new Date();
         this.cveData = {
-            title: testData.title,
+            title: "CVE-"+ today.getFullYear() + "-" +today.getMilliseconds() +  today.getSeconds(),
             details: {
                 source :testData.details.source[index],
                 text: testData.details.text[index]
@@ -33,7 +34,8 @@ class cve {
         return this.cveData;
     }
     get CVETitle(){
-        return this.cveData.title;
+         let today = new Date();
+        return "CVE-"+ today.getFullYear() + "-" +today.getMilliseconds() +  today.getSeconds();
     }
     get CVESource()
     {
