@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/veerpatil/drupal-test-data.git"
+    "url": "git+https://github.com/veerpatil/drupal-test-data-generator.git"
   },
   "keywords": [
     "tdm",
@@ -19,9 +19,9 @@
   "author": "Veerkumar Patil",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/veerpatil/drupal-test-data/issues"
+    "url": "https://github.com/veerpatil/drupal-test-data-generator.git/issues"
   },
-  "homepage": "https://github.com/veerpatil/drupal-test-data#readme",
+  "homepage": "https://github.com/veerpatil/drupal-test-data-generator.git#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
     "js-yaml": "^4.1.0",
