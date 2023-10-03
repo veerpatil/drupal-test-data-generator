@@ -1,0 +1,196 @@
+title: CVE-223-1005
+details:
+  source: 
+  - Red Hat
+  - Mitre
+  text:
+    - It was found that tomcat's FORM authentication allowed a very small period in which an attacker could possibly force a victim to use a valid user session,or Session Fixation. While practical exploit of this issue is deemed highly improbable,an abundance of caution merits it be considered a flaw. The highest threat from this vulnerability is to system availability, but also threatens data confidentiality and integrity.
+    - One more description text for the CVE description
+references: 
+  - "https://www.cve.org/CVERecord?id=CVE-2019-17563\r\nhttps://nvd.nist.gov/vuln/detail/CVE-2019-17563\r\nhttp://mail-archives.apache.org/mod_mbox/www-announce/201912.mbox/%3C21b7a375-7297-581b-1f8e-06622d36775b@apache.org%3E\r\nhttp://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.30\r\nhttps://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.99\r\nhttps://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.5.50"
+statement: 
+  - 'All affected Red Hat products providing the affected component code should update their setups per the product fixes given.The following Red Hat products are out of support scope for Low Impact flaws, and as such will not issue security fixes: Red Hat Enterprise Linux 5 Red Hat Enterprise Linux 6 Red Hat JBoss BPM Suite 6 Red Hat JBoss BRMS 6'
+acknowledgement: 
+  -Testing acknowledgement Working with the affected vendor is highly
+  recommended as part of the vulnerability disclosure process. Irresponsible disclosure
+  of a vulnerability without a “good faith” effort to contact the vendor and allow
+  a patch to be released places users of the affected process at risk.
+  -One more acknowledgement
+mitigation: 'Testing mitigation text added All affected Red Hat products providing
+  the affected component code should update their setups per the product fixes given.The
+  following Red Hat products are out of support scope for Low Impact flaws, and as
+  such will not issue security fixes: Red Hat Enterprise Linux 5 Red Hat Enterprise
+  Linux 6 Red Hat JBoss BPM Suite 6 Red Hat JBoss BRMS 6'
+releases: '[{"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift
+  Container Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date":
+  "2018-11-20T03:15:13+00:00", "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"},
+  "package": "atomic-enterprise-service-catalog", "state": "Fixed", "lifecycle_url":
+  "https://access.redhat.com/support/policy/updates/openshift/"}, {"cpe": "cpe:/a:redhat:openshift:3.10::el7",
+  "product": "Red Hat OpenShift Container Platform 3.10", "advisory": {"name": "RHSA-2018:3549",
+  "release_date": "2018-11-20T03:15:13+00:00", "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"},
+  "package": "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "atomic-openshift-descheduler", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "atomic-openshift-dockerregistry", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "atomic-openshift-node-problem-detector", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "atomic-openshift-web-console", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "golang-github-prometheus-node_exporter", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "openshift-ansible", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "openshift-enterprise-cluster-capacity", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "openshift-monitor-project-lifecycle", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.10::el7", "product": "Red Hat OpenShift Container
+  Platform 3.10", "advisory": {"name": "RHSA-2018:3549", "release_date": "2018-11-20T03:15:13+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3549"}, "package":
+  "openshift-monitor-sample-app", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.11::el7", "product": "Red Hat OpenShift Container
+  Platform 3.11", "advisory": {"name": "RHSA-2018:3537", "release_date": "2018-11-20T03:11:20+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3537"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.2::el7", "product": "Red Hat OpenShift Container
+  Platform 3.2", "advisory": {"name": "RHSA-2018:3742", "release_date": "2018-12-03T17:26:57+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3742"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.3::el7", "product": "Red Hat OpenShift Container
+  Platform 3.3", "advisory": {"name": "RHSA-2018:3754", "release_date": "2018-12-03T17:29:26+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3754"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.3::el7", "product": "Red Hat OpenShift Container
+  Platform 3.3", "advisory": {"name": "RHSA-2018:3754", "release_date": "2018-12-03T17:29:26+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3754"}, "package":
+  "openshift-ansible", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.4::el7", "product": "Red Hat OpenShift Container
+  Platform 3.4", "advisory": {"name": "RHSA-2018:3752", "release_date": "2018-12-03T17:31:11+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3752"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.4::el7", "product": "Red Hat OpenShift Container
+  Platform 3.4", "advisory": {"name": "RHSA-2018:3752", "release_date": "2018-12-03T17:31:11+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3752"}, "package":
+  "openshift-ansible", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.5::el7", "product": "Red Hat OpenShift Container
+  Platform 3.5", "advisory": {"name": "RHSA-2018:3624", "release_date": "2018-12-03T17:34:40+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3624"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.5::el7", "product": "Red Hat OpenShift Container
+  Platform 3.5", "advisory": {"name": "RHSA-2018:3624", "release_date": "2018-12-03T17:34:40+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3624"}, "package":
+  "cockpit", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.5::el7", "product": "Red Hat OpenShift Container
+  Platform 3.5", "advisory": {"name": "RHSA-2018:3624", "release_date": "2018-12-03T17:34:40+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3624"}, "package":
+  "openshift-ansible", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/",
+  "cvss": {"version": 3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}},
+  {"cpe": "cpe:/a:redhat:openshift:3.6::el7", "product": "Red Hat OpenShift Container
+  Platform 3.6", "advisory": {"name": "RHSA-2018:3598", "release_date": "2018-12-03T17:32:35+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3598"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.6::el7", "product": "Red Hat OpenShift Container
+  Platform 3.6", "advisory": {"name": "RHSA-2018:3598", "release_date": "2018-12-03T17:32:35+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3598"}, "package":
+  "openshift-ansible", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.7::el7", "product": "Red Hat OpenShift Container
+  Platform 3.7", "advisory": {"name": "RHSA-2018:2906", "release_date": "2018-11-21T11:56:55+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:2906"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.7::el7", "product": "Red Hat OpenShift Container
+  Platform 3.7", "advisory": {"name": "RHSA-2018:2906", "release_date": "2018-11-21T11:56:55+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:2906"}, "package":
+  "openshift-ansible", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.8::el7", "product": "Red Hat OpenShift Container
+  Platform 3.8", "advisory": {"name": "RHSA-2018:3551", "release_date": "2018-11-19T12:31:36+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:3551"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.9::el7", "product": "Red Hat OpenShift Container
+  Platform 3.9", "advisory": {"name": "RHSA-2018:2908", "release_date": "2018-11-20T03:11:49+00:00",
+  "type": "RHSA", "url": "https://access.redhat.com/errata/RHSA-2018:2908"}, "package":
+  "atomic-openshift", "state": "Fixed", "lifecycle_url": "https://access.redhat.com/support/policy/updates/openshift/"},
+  {"cpe": "cpe:/a:redhat:openshift:3.0", "product": "Red Hat OpenShift Enterprise
+  3.0", "advisory": {}, "package": "openshift", "state": "Will not fix", "lifecycle_url":
+  "https://access.redhat.com/support/policy/updates/openshift/", "cvss": {"version":
+  3, "score": "8.8", "vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"}}]'
+faq: '[{"question": "Why is Red Hat''s CVSS v3 score or Impact different from other
+  vendors?", "answer": "For open source software shipped by multiple vendors, the
+  CVSS base scores may vary for each vendor''s version depending on the version they
+  ship, how they ship it, the platform, and even how the software is compiled. This
+  makes scoring of vulnerabilities difficult for third-party vulnerability databases
+  such as NVD that only provide a single CVSS base score for each vulnerability. Red
+  Hat scores reflect how a vulnerability affects our products specifically.<br><br>For
+  more information, see <a href=\"https://access.redhat.com/solutions/762393\">https://access.redhat.com/solutions/762393</a>."},
+  {"question": "My product is listed as \"Under investigation\" or \"Affected\", when
+  will Red Hat release a fix for this vulnerability?", "answer": "<ul><li>\"Under
+  investigation\" doesn''t necessarily mean that the product is affected by this vulnerability.
+  It only means that our Analysis Team is still working on determining whether the
+  product is affected and how it is affected.</li><li>\"Affected\" means that our
+  Analysis Team has determined that this product is affected by this vulnerability
+  and might release a fix to address this in the near future.</li></ul>"}, {"question":
+  "What can I do if my product is listed as \"Will not fix\"?", "answer": "This depends
+  mostly on the <a href=\"https://access.redhat.com/security/updates/classification/\">Impact</a>
+  of the vulnerability and the <a href=\"https://access.redhat.com/support/policy/update_policies\">Life
+  Cycle</a> phase in which your product is currently in. Overall, you have the following
+  options:<ul><li>Upgrade to a supported product version that includes a fix for this
+  vulnerability (recommended)</li><li>Apply a mitigation (if one exists)</li><li>Open
+  a <a href=\"https://access.redhat.com/support/cases/#/new\">support case</a> to
+  request a prioritization of releasing a fix for this vulnerability</li></ul>"},
+  {"question": "Why is my security scanner reporting my product as vulnerable to this
+  vulnerability even though my product version is fixed or not affected?", "answer":
+  "In order to maintain code stability and compatibility, Red Hat usually does not
+  rebase packages to entirely new versions. Instead, we <a href=\"https://access.redhat.com/security/updates/backporting\">backport</a>
+  fixes and new features to an older version of the package we distribute. This can
+  result in some security scanners that only consider the package version to report
+  the package as vulnerable. To avoid this, we suggest that you use an OVAL-compatible
+  security scanner like OpenSCAP.<br><br>For more information, see <a href=\"https://access.redhat.com/blogs/766093/posts/2998921\">https://access.redhat.com/blogs/766093/posts/2998921</a>."}]'
+cvss:
+  version: 3
+  status: draft
+  score: '7.5'
+  vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+  nvdScore: '7.5'
+  nvdVector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+  explanation: "Proposed changes to current CVSSv3 scoring:\nAC:L -> AC:H\nPR:L ->
+    PR:N\nUI:N -> UI:R\nC:H -> C:L\n\nTo exploit this vulnerability an attacker needs
+    to use an image URL which was already opened earlier by an authenticated/authorized
+    user. When the authorized user views an image from a directories that are configured
+    with $wgImgAuthUrlPathMap, then it may be cached in public cache. The attacker
+    must guess what was the used URL. \nHence proposing a change to Attack Complexity
+    (AC) from Low to High and as the User Interaction is required proposing to change
+    it from None to Required.\nThe attacker don't need any privileges, hence the Privileges
+    required should be None instead of Low. \nThis vulnerability impacts the confidentiality,
+    but the attacker can get access only to resources which were previously viewed,
+    hence proposing to change the Confidentiality metric from High to Low.\n\nWe consider
+    this as a Low impact flaw."
+publicDate: '2023-05-26T00:00:00+00:00'
+cwe: CWE-1,CWE-23
+severity: 
+  - Low
+  - Important
+  - High
+  - Critical
