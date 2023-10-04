@@ -7,5 +7,6 @@ module.exports = {
     cvedetails: cve.generateCVEData(), 
     article: article.generateArticle(),
     solution: solution.generateSolution(),
-    discussion: discussion.generateDiscussion()
+    discussion: discussion.generateDiscussion(),
+    articles: article.generateArticle()
 } ;
