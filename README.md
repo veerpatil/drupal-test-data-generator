@@ -30,7 +30,7 @@ $ `node --version`
 ```
 Installing the drupal-test-data package 
 ```
-npm install @drupal-test=data --save-dev 
+npm install drupal-test-data --save-dev 
 ```
 
 ## Usage <a name = "usage"></a>
